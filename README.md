@@ -40,7 +40,8 @@ clusteringVSmapper/
     ├── clustering_metrics_*.json   # Métricas cuantitativas clustering
     ├── mapper_metrics_*.json       # Métricas cuantitativas MAPPER
     ├── informe_comparativo_*.xlsx  # Informe comparativo completo
-    └── mapper_graph_interactive.html # Grafo MAPPER interactivo con visualización de clientes
+    ├── mapper_grafico_estatico_*.png # Grafo MAPPER con variables mora
+    └── mapper_grafico_sinmora_*.png # Grafo MAPPER sin variables mora
 ```
 
 ## Funcionalidades Principales
