@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import networkx; import matplotlib; print\\('networkx:', networkx.__version__\\); print\\('matplotlib:', matplotlib.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c \"import networkx; print\\('networkx ok:', networkx.__version__\\)\")",
+      "Bash(python src/creditdataqc/mapper_grafo_estatico.py)",
+      "Bash(python -m pip show pandas)",
+      "Bash(where python *)",
+      "Bash(py -3.11 -c \"import pandas; import kmapper; print\\('ok'\\)\")",
+      "Bash(python -m pip list)",
+      "Bash(findstr -i \"pandas\\\\|kmapper\\\\|sklearn\\\\|numpy\")",
+      "Bash(pip list *)",
+      "Bash(Select-String \"pandas|kmapper|sklearn|numpy\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\silvi\" -Recurse -Name \"python.exe\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -First 20)",
+      "Bash(\"C:\\\\Users\\\\silvi\\\\OneDrive - CUNEF\\\\Ing. matemática\\\\4\\\\Modelizacion en ing de datos\\\\venv\\\\Scripts\\\\python.exe\" -c \"import pandas; import kmapper; import networkx; import matplotlib; print\\('All ok'\\); print\\('pandas:', pandas.__version__\\)\")",
+      "PowerShell(py -3.12 -m pip install pandas openpyxl scikit-learn kmapper 2>&1)",
+      "PowerShell(tail -5)",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\silvi\\\\OneDrive - CUNEF\\\\Ing. matemática\\\\4\\\\TFG\\\\clusteringVSmapper\"; $env:PYTHONPATH = \"src\"; py -3.12 -m creditdataqc 2>&1 | Select-Object -First 10)"
+    ]
+  }
+}

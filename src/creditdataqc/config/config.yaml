@@ -1,0 +1,42 @@
+################################ Run Configuration ############################
+
+general:
+  app_name: creditdataqc
+
+run:
+  execution_date: ${now:%Y-%m-%d}
+  execution_datetime: ${now:%Y-%m-%d %H:%M:%S}
+  report_date: ${bday_before:1}
+  cwd: ??? # This will be introduced by the config.py module
+  env: prod
+
+# Variable dependent on Environment
+env_run_path:
+  dev: ${internal_location.root}\..\..\tests\runs_DEV
+  test: ${run.cwd}\runs_TEST
+  prod: ${run.cwd}\runs_PROD
+
+run_path: ${env_run_path[${run.env}]}
+output_path: ${run_path}\_output
+
+################################ Internal Location ################################
+
+internal_location:
+  root: ???  # This will be introduced by the config.py module
+  data: ${internal_location.root}/data
+
+################################ Logging ################################
+
+env_log_level:
+  dev: DEBUG
+  test: INFO
+  prod: INFO
+
+logging:
+  log_level: ${env_log_level[${run.env}]}
+  log_filepath: ${run_path}\_log
+
+################################ Secrets ################################
+
+snowflake: "temq-neuron-sfdb-config-general"
+

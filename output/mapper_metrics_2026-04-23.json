@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "fecha_analisis": "2026-04-23",
+    "algoritmo": "Mapper (Singh et al., 2007)",
+    "n_clientes": 61347,
+    "n_features": 31
+  },
+  "grafo": {
+    "n_nodos": 1065,
+    "n_aristas": 487,
+    "n_componentes_conexas": "calculado en aplicar_mapper"
+  },
+  "top_10_nodos_alto_riesgo": [
+    {
+      "node_id": "cube26_cluster0",
+      "n_clientes": 82,
+      "n_morosos": 82,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube26_cluster1",
+      "n_clientes": 37,
+      "n_morosos": 37,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube26_cluster4",
+      "n_clientes": 4,
+      "n_morosos": 4,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube27_cluster0",
+      "n_clientes": 102,
+      "n_morosos": 102,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube27_cluster1",
+      "n_clientes": 40,
+      "n_morosos": 40,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube27_cluster2",
+      "n_clientes": 37,
+      "n_morosos": 37,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube45_cluster0",
+      "n_clientes": 60,
+      "n_morosos": 60,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube46_cluster0",
+      "n_clientes": 6,
+      "n_morosos": 6,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube48_cluster0",
+      "n_clientes": 16,
+      "n_morosos": 16,
+      "tasa_morosidad": 1.0
+    },
+    {
+      "node_id": "cube49_cluster0",
+      "n_clientes": 5,
+      "n_morosos": 5,
+      "tasa_morosidad": 1.0
+    }
+  ]
+}

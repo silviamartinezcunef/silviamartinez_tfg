@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "fecha_analisis": "2026-04-23",
+    "n_clientes": 61347,
+    "n_features": 33,
+    "algoritmos": [
+      "K-Means",
+      "DBSCAN",
+      "Hierarchical"
+    ]
+  },
+  "kmeans": {
+    "n_clusters": 10,
+    "wcss": 1222318.7202018346,
+    "silhouette": 0.24108873201861156,
+    "davies_bouldin": 1.5618865743305261,
+    "calinski_harabasz": 4130.360705157606,
+    "top_3_clusters_morosidad": [
+      {
+        "cluster_id": 6,
+        "n_clientes": 11,
+        "n_morosos": 11,
+        "tasa_morosidad": 1.0
+      },
+      {
+        "cluster_id": 3,
+        "n_clientes": 1941,
+        "n_morosos": 1937,
+        "tasa_morosidad": 0.9979392065945389
+      },
+      {
+        "cluster_id": 5,
+        "n_clientes": 9108,
+        "n_morosos": 1118,
+        "tasa_morosidad": 0.12274923144488362
+      }
+    ]
+  },
+  "dbscan": {
+    "n_clusters": 106,
+    "n_outliers": 2759,
+    "pct_outliers": 4.497367434430371,
+    "silhouette": 0.5000531753876964,
+    "davies_bouldin": 1.5263001195067414,
+    "calinski_harabasz": 2202.5857237452606,
+    "top_3_clusters_morosidad": [
+      {
+        "cluster_id": 20,
+        "n_clientes": 12,
+        "n_morosos": 12,
+        "tasa_morosidad": 1.0
+      },
+      {
+        "cluster_id": 14,
+        "n_clientes": 15,
+        "n_morosos": 15,
+        "tasa_morosidad": 1.0
+      },
+      {
+        "cluster_id": 15,
+        "n_clientes": 14,
+        "n_morosos": 14,
+        "tasa_morosidad": 1.0
+      }
+    ]
+  },
+  "hierarchical": {
+    "n_clusters": 5,
+    "linkage": "ward",
+    "silhouette": 0.16548843527252305,
+    "davies_bouldin": 2.3004574564759697,
+    "calinski_harabasz": 3462.583291480073,
+    "top_3_clusters_morosidad": [
+      {
+        "cluster_id": 2,
+        "n_clientes": 11536,
+        "n_morosos": 3310,
+        "tasa_morosidad": 0.2869278779472954
+      },
+      {
+        "cluster_id": 4,
+        "n_clientes": 1707,
+        "n_morosos": 194,
+        "tasa_morosidad": 0.11364967779730521
+      },
+      {
+        "cluster_id": 0,
+        "n_clientes": 6742,
+        "n_morosos": 633,
+        "tasa_morosidad": 0.0938890536932661
+      }
+    ]
+  }
+}
